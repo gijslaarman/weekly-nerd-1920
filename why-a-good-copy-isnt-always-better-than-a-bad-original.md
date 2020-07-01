@@ -1,3 +1,4 @@
+# 'Why a good copy isn't always better than a bad original.'
 **'Why a good copy isn't always better than a bad original.'** <br>
 Weird sentence right? Because it's a take on the dutch phrase: "Better a good copy than a bad original." (Beter goed gejat dan slecht bedacht). Now I am not saying it's bad to copy someone else's work.
 
