@@ -10,7 +10,7 @@ With the help of [@kriskuiper](https://github.com/kriskuiper) who already had qu
 - [Commit often](#commit-often)
 
 ### Create guidelines
-So before you start a repository together set up some guidelines. Github has a nice overview of [what to do[(https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors). (No need to reinvent the wheel).
+So before you start a repository together set up some guidelines. Github has a nice overview of [what to do](https://help.github.com/en/github/building-a-strong-community/setting-guidelines-for-repository-contributors). (No need to reinvent the wheel).
 
 They are a big help to creating a more systematic approach to your project. Some guidelines to create are:
 1. **Naming conventions for commits.** See how [Angular](https://github.com/angular/angular/commits/master) does this. They start with a small word 'refactor:' to tell others what this commit did.
