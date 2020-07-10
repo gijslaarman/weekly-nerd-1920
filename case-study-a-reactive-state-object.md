@@ -1,6 +1,6 @@
 # Case study: a reactive state object
 
-Intrigued by the possibilities in Javascript I wanted to explore some more functionalities the programming language has to offer. How does React from Facebook™ create that State object. More importantly how can I create an object that knows when it’s value changed and tie a listener to it. Time to create an object that listens to its own changes.
+Intrigued by the possibilities in Javascript I wanted to explore some more functionalities the programming language has to offer. How does React from Facebook™ create that [State object](https://reactjs.org/docs/faq-state.html). More importantly how can I create an object that knows when it’s value changed and tie a listener to it. Time to create an object that listens to its own changes.
 
 *Little disclaimer, what I’m going to do does not need to be a class, but I thought it would be interesting to create a little microlibrary, for reusing purpose.*
 
@@ -20,7 +20,7 @@ The car (object) is red, has 4 doors and 4 wheels (properties). Easy. You organi
 **But there’s more to it.** Objects can actually be very advanced stuff, no wonder there’s a term in programming called ‘Object Oriented Programming’. Objects can also hold functions, arrays and nested objects, even setting or getting a property can be handled inside the object better, more on that later.
 
 ### Getters & Setters
-Who? Getters and Setters are what their name implies (like everything in programming). They get properties values from objects, or set property values. To get a value of a property you would type in “car.doors” and to set a value you would type “car.doors = 4”.
+Who? [Getters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) and [Setters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set) are what their name implies (like everything in programming). They get properties values from objects, or set property values. To get a value of a property you would type in “car.doors” and to set a value you would type “car.doors = 4”.
 
 So here comes a little magic, what if we wanted to set the number of doors of the car to always have + 1 than the number you typed in (because people always forget the door of the trunk, for example). Typing in car.doors = 4 wouldn’t magically make it 5. We need a function to handle that. Insert the standard object methods (object functions): get & set.
 
@@ -85,7 +85,8 @@ But I’m not done yet, although this works it will get tedious to add a setter 
 ### Back to school, uh no Class.
 So insert [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/class). Classes are used as javascript object constructors that you can see as a small factory. As a rule of thumb: class variables are Capitalized. So factories eh, that sounds promising so can we automate the creation of our property listeners? Yes.
 
-So let’s create our factory called ‘ReactiveObject’. But like every factory it needs workers in this case a [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) to tell the new object on creation what it needs to do. But you can also add your own
+So let’s create our factory called ‘ReactiveObject’. 'ReactiveObject' because it responds/reacts to changes made to it's properties. 
+But like every factory it needs workers in this case a [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor) to tell the new object on creation what it needs to do. But you can also add your own
 [methods](https://developer.mozilla.org/en-US/docs/Glossary/Method), in short: they’re functions saved as properties in objects.
 
 #### Creating our new class
